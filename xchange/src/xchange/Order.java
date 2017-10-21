@@ -5,28 +5,38 @@ import java.util.*;
 public class Order {
 
 	//information about order
-	int id;
+	long id;
+	String security;
 	String trader;
-	Date date;
+	Date dateTime;
 	double amount;
 	char buyOrSell;
 	
 	//constructor
-	public Order(int id, String trader, Date date, double amount, char buyOrSell) {
+	public Order(long id, String security, String trader, Date dateTime, double amount, char buyOrSell) {
 		this.id = id;
+		this.security = security;
 		this.trader = trader;
-		this.date = date;
+		this.dateTime = dateTime;
 		this.amount = amount;
 		this.buyOrSell = buyOrSell;
 	}
 	
 	//setters and getters
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
-	public int getId() {
+	public long getId() {
 		return id;
+	}
+	
+	public void setSecurity(String security) {
+		this.security = security;
+	}
+	
+	public String getSecurity() {
+		return security;
 	}
 	
 	public void setTrader(String trader) {
@@ -37,12 +47,12 @@ public class Order {
 		return trader;
 	}
 	
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDateTime(Date dateTime) {
+		this.dateTime = dateTime;
 	}
 	
-	public Date getDate() {
-		return date;
+	public Date getDateTime() {
+		return dateTime;
 	}
 	
 	public void setAmount(double amount) {
