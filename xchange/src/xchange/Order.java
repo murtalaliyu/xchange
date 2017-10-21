@@ -5,12 +5,12 @@ import java.util.*;
 public class Order {
 
 	//information about order
-	long id;
-	String security;
-	String trader;
-	Date dateTime;
-	double amount;
-	char buyOrSell;
+	private long id;
+	private String security;
+	private String trader;
+	private Date dateTime;
+	private double amount;
+	private char buyOrSell;
 	
 	//constructor
 	public Order(long id, String security, String trader, Date dateTime, double amount, char buyOrSell) {
@@ -23,51 +23,51 @@ public class Order {
 	}
 	
 	//setters and getters
-	public void setId(long id) {
+	void setId(long id) {
 		this.id = id;
 	}
 	
-	public long getId() {
+	long getId() {
 		return id;
 	}
 	
-	public void setSecurity(String security) {
+	void setSecurity(String security) {
 		this.security = security;
 	}
 	
-	public String getSecurity() {
+	String getSecurity() {
 		return security;
 	}
 	
-	public void setTrader(String trader) {
+	void setTrader(String trader) {
 		this.trader = trader;
 	}
 	
-	public String getTrader() {
+	String getTrader() {
 		return trader;
 	}
 	
-	public void setDateTime(Date dateTime) {
+	void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
 	}
 	
-	public Date getDateTime() {
+	Date getDateTime() {
 		return dateTime;
 	}
 	
-	public void setAmount(double amount) {
+	void setAmount(double amount) {
 		this.amount = amount;
 	}
 	
-	public double getAmount() {
+	double getAmount() {
 		return amount;
 	}
 	
-	public void setBuyOrSell(char buyOrSell) {
+	void setBuyOrSell(char buyOrSell) {
 		this.buyOrSell = buyOrSell;
 	}
 	
-	public char getBuyOrSell() {
+	char getBuyOrSell() {
 		return buyOrSell;
 	}
 }

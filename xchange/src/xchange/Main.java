@@ -11,11 +11,14 @@ public class Main {
 		Date dateTime = new Date();
 		Order order = new Order(1,"Sec01","Murt",dateTime,100,'B');
 		
-		System.out.println("id: " + order.id);
-		System.out.println("security: " + order.security);
-		System.out.println("trader name: " + order.trader);
-		System.out.println("date and time: " + order.dateTime);
-		System.out.println("amount: " + order.amount);
-		System.out.println("buy or sell? " + order.buyOrSell);
+		System.out.println("id: " + order.getId());
+		System.out.println("security: " + order.getSecurity());
+		System.out.println("trader name: " + order.getTrader());
+		System.out.println("date and time: " + order.getDateTime());
+		System.out.println("amount: " + order.getAmount());
+		System.out.println("buy or sell? " + order.getBuyOrSell());
+		
+		order.setAmount(243);
+		System.out.println("New amount: " + order.getAmount());
 	}
 }
