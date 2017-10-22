@@ -6,6 +6,7 @@ public class Order {
 
 	//information about order
 	private long id;
+	private String instrument;
 	private String security;
 	private String trader;
 	private Date dateTime;
@@ -13,8 +14,9 @@ public class Order {
 	private char buyOrSell;
 	
 	//constructor
-	public Order(long id, String security, String trader, Date dateTime, double amount, char buyOrSell) {
+	public Order(long id, String instrument, String security, String trader, Date dateTime, double amount, char buyOrSell) {
 		this.id = id;
+		this.instrument = instrument;
 		this.security = security;
 		this.trader = trader;
 		this.dateTime = dateTime;
@@ -29,6 +31,14 @@ public class Order {
 	
 	long getId() {
 		return id;
+	}
+	
+	void setInstrument(String instrument) {
+		this.instrument = instrument;
+	}
+	
+	String getInstrument() {
+		return instrument;
 	}
 	
 	void setSecurity(String security) {

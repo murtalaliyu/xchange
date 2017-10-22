@@ -9,9 +9,10 @@ public class Main {
 		//Main program runs here, testing also occurs here
 		
 		Date dateTime = new Date();
-		Order order = new Order(1,"Sec01","Murt",dateTime,100,'B');
+		Order order = new Order(1,"Stock","Sec01","Murt Aliyu",dateTime,100,'B');
 		
 		System.out.println("id: " + order.getId());
+		System.out.println("instrument: " + order.getInstrument());
 		System.out.println("security: " + order.getSecurity());
 		System.out.println("trader name: " + order.getTrader());
 		System.out.println("date and time: " + order.getDateTime());
