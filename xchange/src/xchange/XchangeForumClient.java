@@ -9,7 +9,7 @@
 * thread 2 reads data from server.
 * thread 2 prints out on the standard output
 */
-package xchange;
+//package xchange;
 import java.io.*;
 import java.util.*;
 import java.net.*;
