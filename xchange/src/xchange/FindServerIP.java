@@ -10,7 +10,7 @@ public class FindServerIP.java {
 		  ip = InetAddress.getLocalHost();
 		  System.out.println("Current IP address : " + ip.getHostAddress());
 	  } catch (UnknownHostException e) {
-		  e.e.printStackTrace();
+		  e.printStackTrace();
 	  }
   }
 }
