@@ -1,7 +1,7 @@
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-public class FindServerIP.java {
+public class FindServerIP {
 	public static void main(String[] args) {
     
     		InetAddress ip;  
