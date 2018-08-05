@@ -36,8 +36,8 @@ public class XchangeForumClient implements Runnable {
 
 		//calibrate port
 		if (args.length < 2) {
-			System.out.println("Usage: default host=" + host + 
-			" and random port number=" + portNumber);
+			System.out.println("Usage: host=" + host + 
+			" and port number=" + portNumber);
 		} else {
 			host = args[0];
 			portNumber = Integer.valueOf(args[1]).intValue();
