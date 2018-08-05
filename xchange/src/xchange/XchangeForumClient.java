@@ -41,8 +41,8 @@ public class XchangeForumClient implements Runnable {
 		} else {
 			host = args[0];
 			portNumber = Integer.valueOf(args[1]).intValue();
-			System.out.println("Usage: custom host=" + host + 
-			" and custom port number=" +portNumber);
+			System.out.println("\nUsage: host=" + host + 
+			" and port number=" +portNumber);
 		}
 
 		/* open a socket on given host and port. 
@@ -57,7 +57,7 @@ public class XchangeForumClient implements Runnable {
 		} catch (UnknownHostException e) {
 			System.err.println("Don't know about host=" + host);
 		} catch (IOException e) {
-			System.out.println("Couldn't get I/O for the connection to the host=" + host);
+			System.out.println("Couldn't get I/O for the connection to the host=" + host + "\nReason: Server is offline. Please contact [murtalaliyu10@gmail.com] for more details\n");
 		}
 
 		/*
