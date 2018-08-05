@@ -42,7 +42,7 @@ public class XchangeForumClient implements Runnable {
 			host = args[0];
 			portNumber = Integer.valueOf(args[1]).intValue();
 			System.out.println("\nUsage: host=" + host + 
-			" and port number=" +portNumber);
+			" and port number=" + portNumber);
 		}
 
 		/* open a socket on given host and port. 
