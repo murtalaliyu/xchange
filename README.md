@@ -1,2 +1,2 @@
 # xchange
-A securities/asset exchange app for... you guessed it, financial transactions.
+A securities/asset exchange app for... you guessed it, facilitating trade!
