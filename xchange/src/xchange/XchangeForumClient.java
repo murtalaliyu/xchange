@@ -30,7 +30,7 @@ public class XchangeForumClient implements Runnable {
 	public static void main(String[] args) {
 
 		//host
-		String host = "192.168.1.170";
+		String host = "34.238.193.4";
 		//chat server port
 		int portNumber = 2222;
 
