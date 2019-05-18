@@ -1,2 +1,2 @@
 # xchange
-A terminal-based client-server exchange app for-you guessed it-simulating the trading of financial securities!
+A terminal-based client-server exchange application for-you guessed it-simulating the trading of financial securities!
